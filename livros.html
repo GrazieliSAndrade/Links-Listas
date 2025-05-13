@@ -1,32 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livros favoritos</title>
     <link rel="shortcut icon" href="livro.png" type="image/x-icon">
-    <body>
-        <header>
-            <a href="index.html" target="_blank">
-             <img src="home.png" alt="figura de uma casa" width="50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
-            <a href="musicasFavoritas.html" target="_blank">
-              <img src="msc.png" alt="figura de boneco com fone de ouvido" width="50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                
-            <a href="memes.html" target="_blank">
-                <img src="risos.png" alt="figura rindo" width="50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
-            <a href="livros.html" target="_blank">
-                <img src="livro.png" alt="figura de um livro e uma varinha mágica em cima" width="50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <nav>
-                   <a href="index.html">Página inicial</a> |&nbsp;&nbsp;
-                   <a href="musicasFavoritas.html">Músicas favoritas</a> |&nbsp;&nbsp;
-                   <a href="memes.html">Memes favoritos</a> |&nbsp;&nbsp;
-                   <a href="livros.html">Livros favoritos</a>
+    <style>
+ body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
 
-            </nav>
-        </header>
-        
-    
+    h1 {
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .livro {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 160px;
+      padding: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .livro img {
+      width: 100%;
+      border-radius: 5px;
+      height: auto;
+    }
+
+    .livro p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .livro:hover {
+      transform: scale(1.05);
+    }
+    </style>
+
+<body>
+    <nav>
+        <a href="index.html" target="_blank">
+            <img src="home.png" alt="figura de uma casa" width="50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="musicasFavoritas.html" target="_blank">
+            <img src="msc.png" alt="figura de boneco com fone de ouvido"
+                width="50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <a href="memes.html" target="_blank">
+            <img src="risos.png" alt="figura rindo" width="50px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <a href="livros.html" target="_blank">
+            <img src="livro.png" alt="figura de um livro e uma varinha mágica em cima" width="50px"></a>&nbsp;&nbsp;
+        <nav>
+            <a href="index.html">Página inicial</a> |&nbsp;&nbsp;
+            <a href="musicasFavoritas.html">Músicas favoritas</a> |&nbsp;&nbsp;
+            <a href="memes.html">Memes favoritos</a> |&nbsp;&nbsp;
+            <a href="livros.html">Livros favoritos</a>
+        </nav>
+        &nbsp;<main>
+            <section>
+                <h1>📚 Meus Livros Favoritos:</h1>
+                <div class="galeria">
+                    <div class="livro">
+                      <img src="https://m.media-amazon.com/images/I/913FVnW0yQL._SY342_.jpg" alt="O Príncipe Cruel">
+                      <p>O Príncipe Cruel</p>
+                    </div>
+                    <div class="livro">
+                      <img src="https://m.media-amazon.com/images/I/51PoQ61oq-L._SY445_SX342_.jpg" alt="Harry Potter e a Pedra Filosofal">
+                      <p>Harry Potter e a Pedra Filosofal</p>
+                    </div>
+                    <div class="livro">
+                      <img src="https://m.media-amazon.com/images/I/51UfnZNPCWL._SY445_SX342_.jpg" alt="O Amor Não é Óbvio">
+                      <p>O Amor Não é Óbvio</p>
+                    </div>
+                    <div class="livro">
+                      <img src="https://m.media-amazon.com/images/I/51+YbHB2zJL._SY445_SX342_.jpg" alt="Coisas Óbvias Sobre o Amor">
+                      <p>Coisas Óbvias Sobre o Amor</p>
+                    </div>
+                    <div class="livro">
+                      <img src="https://m.media-amazon.com/images/I/81gZKH4J6dL._AC_UL320_.jpg" alt="Capa do livro: Ela Fica com a Garota">
+                      <p>Ela Fica com a Garota</p>
+                    </div>
+                    <div class="livro">
+                      <img src="https://m.media-amazon.com/images/I/71dQ4DPcGdL._SL1200_.jpg" alt="Lady Killers">
+                      <p>Lady Killers</p>
+                    </div>
+                    <div class="livro">
+                      <img src="https://m.media-amazon.com/images/I/61OWsY-+8eL._SY342_.jpg" alt="Capa do livro: Arquivos Serial Killers">
+                      <p>Arquivos Serial Killers</p>
+                    </div>
+                    <div class="livro">
+                      <img src="https://m.media-amazon.com/images/I/51PBKZ00otL._SL1200_.jpg" alt="Capa do livro: BTK Profile: Máscara da Maldade">
+                      <p>BTK Profile: Máscara da Maldade</p>
+                      </div>
+                      <div class="livro">
+                        <img src="https://m.media-amazon.com/images/I/71P-Mok4cqL._SY342_.jpg" alt="Capa do livro: Estilhaça-me">
+                        <p>Estilhaça-me</p>
+                      </div>
+                      <div class="livro">
+                        <img src="https://m.media-amazon.com/images/I/81HB-DJUVHL._SY342_.jpg" alt="Capa do livro: Caraval">
+                        <p>Caraval</p>
+                    </div>
+                    <div class="">
+                        <img src="https://m.media-amazon.com/images/I/9140FsDZl9L._SY342_.jpg" alt="Capa do livro: O visconde que me amava (Os Bridgertons – Livro 2)">
+                        <p>O visconde que me amava (Os Bridgertons – Livro 2)</p>
+                    </div>
+                  </div>
+
 </body>
+
 </html>
